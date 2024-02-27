@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Details</title>
+<link rel="stylesheet" href="styles12.css">
+</head>
+<body>
+  
+<div class="container">
+  <h2><span>User</span> Details</h2>
+  <div class="user-details">
+    <div class="logo"><img src="download2.png" width="100%" height="100%"></div>
+    <p><strong>First Name:</strong>&nbsp;&nbsp;&nbsp;&nbsp; <span id="printFirstName"></span></p>
+    <p><strong>Last Name:</strong>&nbsp;&nbsp;&nbsp;&nbsp; <span id="printLastName"></span></p>
+    <p><strong>Email:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="printEmail"></span></p>
+    <p><strong>Password:</strong>&nbsp;&nbsp;&nbsp;&nbsp; ****</p>
+    <p><strong>Father's Name:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="printFatherName"></span></p>
+    <p><strong>Father's Occupation:</strong>&nbsp;&nbsp;&nbsp;&nbsp; <span id="printFatherOccupation"></span></p>
+    <p><strong>Address:</strong>&nbsp;&nbsp;&nbsp;&nbsp; <span id="printAddress"></span></p>
+    <p><strong>Confirm Address:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="printConfirmAddress"></span></p>
+    <p><strong>Postal Code:</strong>&nbsp;&nbsp;&nbsp;&nbsp; <span id="printPostalCode"></span></p>
+    <p><strong>Phone Number:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="printPhoneNumber"></span></p>
+    <p><strong>Personal Number:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="printPersonalNumber"></span></p>
+    <p><strong>Nationality:</strong>&nbsp;&nbsp;&nbsp;&nbsp <span id="printNationality"></span></p>
+    
+    
+  </div>
+  <div class="but">
+    <button type="submit" id="nextButton"><a href="./index.html">Home page</a></button>
+      </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("printFirstName").textContent = localStorage.getItem("firstName");
+    document.getElementById("printLastName").textContent = localStorage.getItem("lastName");
+    document.getElementById("printEmail").textContent = localStorage.getItem("email");
+    document.getElementById("printFatherName").textContent = localStorage.getItem("fatherName");
+    document.getElementById("printFatherOccupation").textContent = localStorage.getItem("fatherOccupation");
+    document.getElementById("printAddress").textContent = localStorage.getItem("address");
+    document.getElementById("printConfirmAddress").textContent = localStorage.getItem("confirmAddress");
+    document.getElementById("printPostalCode").textContent = localStorage.getItem("postalCode");
+    document.getElementById("printPhoneNumber").textContent = localStorage.getItem("phoneNumber");
+    document.getElementById("printPersonalNumber").textContent = localStorage.getItem("personalNumber");
+    document.getElementById("printNationality").textContent = localStorage.getItem("nationality");
+  
+  });
+
+
+</script>
+</body>
+</html>
